@@ -1,0 +1,121 @@
+:root {
+    --fondo: #121212;
+    --gris-oscuro: #1e1e1e;
+    --gris: #2c2c2c;
+    --gris-claro: #dddddd;
+    --borde: #3a3a3a;
+    --texto: #f0f0f0;
+    --acento: #66b2ff;
+    }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+header{
+    background-color: var(--gris);
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--acento);
+}
+
+header h1{
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-size: 1.1rem;
+    color: var(--gris-claro);
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    background: var(--gris-oscuro);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    main h2 {
+    color: var(--acento);
+    text-align: center;
+    margin-bottom: 25px;
+    }
+
+    div{
+        justify-content: center;
+    }
+
+    form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;      
+    }
+
+    label {
+    font-weight: bold;
+    color: var(--gris-claro);
+    }
+
+    input, textarea {
+    padding: 12px;
+    border: 2px solid var(--borde);
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: var(--gris);
+    color: var(--texto);
+    text-align: center;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+    color: #aaa;
+    }
+
+    input:focus,
+    textarea:focus {
+    outline: none;
+    border-color: var(--acento);
+    }
+
+    textarea {
+    resize: vertical;
+    min-height: 120px;
+    }
+
+    button {
+    background-color: var(--acento);
+    color: var(--fondo);
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+    background-color: #3399ff;
+    }
+
+    footer {
+    background-color: #1a1a1a;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    }
