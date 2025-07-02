@@ -2,7 +2,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
+    /* Quiero que todos mis contenedores no se vean sobrepasados por su contenido, bordes o padding. */
 }
 
 h2, h3, p{
@@ -25,6 +26,7 @@ header{
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* DezplX - DezplY - Difusión - Color */
 }
 
 /* Barra de Navegación */
@@ -40,6 +42,8 @@ nav a{
     color: white;
     text-decoration: none;
     transition: color 0.3 ease;
+    /* Le digo a mi navegador que la transición no ocurra de golpe. */
+    /* transition: propiedad duración tipo-de-transición; */
 }
 
 nav a:hover{
@@ -59,6 +63,7 @@ main section{
 .proyectos{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    /* Agregame columnas(Si sobra espacio llena, de minimo y de max) */
     gap: 20px;
     margin-top: 20px;
 }
@@ -130,17 +135,22 @@ footer {
     nav ul {
     flex-direction: row;
     flex-wrap: wrap;
+    /* Si es de 1024 o mas pequeña, la nav sigue en fila, */
+    /* Pero los botones bajan a otra linea si no caben. */
     }
 }
 
 @media (max-width: 768px) {
     .proyectos {
     grid-template-columns: 1fr 1fr;}
+    /* Si es de 760 o menos */
+    /* Las tarjetas se veran en dos columnas */
 }
 
 @media (max-width: 480px) {
     nav ul {
     flex-direction: column;
+    /* Se colocan uno debajo del otro */
     gap: 10px;
     }
 
